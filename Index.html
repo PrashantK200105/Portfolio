@@ -59,7 +59,7 @@
                                 </ul>
 
                             </div>
-                            <div class="tab-contents" id=" experience">
+                            <div class="tab-contents" id="experience">
                                 <ul>
                                     <li><span> 2019 - 2022 </span><br> Bachelor of Information Technology from Kent Institute of Australia </li>
                                     <li><span> 2016 - 2018 </span><br>High school majoring in Computer Science from Oxford High school</li>
@@ -71,19 +71,28 @@
                     </div>
                 </div>
             </div>
+            
+            <div id="Services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+
+                    </div>
+                </div>
+            </div>
             <script>
                 var tablinks = document.getElementsByClassName("tab-links");
                 var tabcontents = document.getElementsByClassName("tab-contents");
                 
                 function opentab(tabname){
                     for(tablink of tablinks){
-                    tablink.classList.remove("active-link")
+                    tablink.classList.remove("active-link");
                     }
-                    for(tabcontent of contents){
-                    tabcontent.classList.remove("active-tab")
+                    for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
                     }    
                     event.currentTarget.classList.add("active-link");
-                    document.getElementByID(tabname).classList.add("active-tab");
+                    document.getElementById(tabname).classList.add("active-tab");
                 }
 
             </script>
